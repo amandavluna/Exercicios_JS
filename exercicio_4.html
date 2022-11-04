@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Escolar</title>
+</head>
+
+<body>
+    <h1>Média Escolar</h1>
+      <div id="mediaFinal"></div>
+
+    <script>
+        let aluno = prompt("Digite o nome do aluno.");
+        let disciplina = prompt("Digite a disciplina escolar.");
+        let turma = prompt("Digite a turma.");
+        let nota1 = Number (prompt("Digite a primeira nota."));
+        let nota2 = Number (prompt("Digite a segunda nota."));
+        let nota3 = Number (prompt("Digite a terceira nota."));
+        let media = Number( nota1 + nota2 + nota3) /3;
+
+        document.getElementById("mediaFinal").innerHTML = "</br> Nome do aluno: " + aluno + "</br> Nome da disciplina: " + disciplina + "</br>Turma: " + turma + "</br>Média final: " + media; 
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Escolares</title>
+</head>
+<body>
+    <h1>Ficha aluno</h1>
+    <div id="dadosAluno"></div>
+    <script>
+        let nomeAluno = prompt("Digite o nome do aluno.");
+        let primeiraNota = Number(prompt("Digite a primeira nota."));
+        let segundaNota = Number(prompt("Digite a segunda nota."));
+        let terceiraNota = Number(prompt("Digite a terceira nota"));
+        let disciplina = prompt("Digite a disciplina.");
+        let frequencia = Number(prompt("Digite a frequência do aluno."));
+
+        document.getElementById("dadosAluno").innerHTML = "</br>Nome do aluno: " + nomeAluno + "</br>Primeira nota:" + primeiraNota + "</br> Segunda nota: " + segundaNota + "</br>Terceira nota: " + terceiraNota + "</br> Disciplina: " + disciplina + "</br>Frequência" + frequencia;
+
+    </script>
+
+</body>
+</html>
